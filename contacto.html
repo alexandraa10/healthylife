@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img class="logo" src="img/Healthy-Life-Logo-white.png" alt="Healthy Life Logo">
+            </div>
+
+            <!-- Menú -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Cabecero de contacto-->
+
+        <div class="contacto">
+            <h1>Contáctanos con nosotros</h1>
+            <p>Estamos para tus consultas, llámanos, escribenos o envianos un correo</p>
+        </div>
+        
+   
+     <!-- Contenedor principal -->
+     <div class="contacto-container">
+        <!-- Formulario -->
+        <div class="formulario">
+            <h2>Déjanos un mensaje</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="empresa">Empresa/Organización</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Tu empresa (opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad, País</p>
+            <p><strong>Email:</strong> contacto@tuempresa.com</p>
+            <p><strong>Teléfono:</strong> +34 600 000 000</p>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <!-- Mapa de fondo -->
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093774!2d-122.41941608468006!3d37.77492927975988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dc0c7e7f%3A0x4a2c88cb662dbb2c!2sSan%20Francisco%2C%20CA%2C%20EE.%20UU.!5e0!3m2!1ses-419!2ses!4v1696330529339!5m2!1ses-419!2ses"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+    <footer>
+        <p>&copy; 2024 Nicolle Laza | Todos los derechos reservados.</p>
+        <p>Contacto: <a href="lbalexa2@gmail.com">lbalexa2@gmail.com</a></p>
+    </footer>
+    <a href="https://wa.me/924751197" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+    </a>
+</body>
+</html>

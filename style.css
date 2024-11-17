@@ -1,0 +1,654 @@
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Encabezado */
+.logo{
+   width: 150px;
+   height: 150px;
+}
+
+.menu ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaciado entre elementos del menú */
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #FFD700; /* Color amarillo al pasar el ratón */
+}
+
+.header {
+    background-color: #0078D4; /* Fondo azul */
+    padding: 20px 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info{
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+/* Secciones */
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 40px;
+    padding-left: 51px;
+}
+
+main section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+ 
+/*Seccion Inicio*/
+.informacion-destacada {
+    background-color: #f8f9fa;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.informacion-destacada h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.destacado-container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destacado-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.destacado-item img {
+    width: 100%;
+    height: auto;
+}
+
+.destacado-item h3 {
+    font-size: 1.5em;
+    color: #444;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.destacado-item p {
+    padding: 0.5em;
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+.btn-leer-mas {
+    display: block;
+    text-align: center;
+    padding: 0.8em;
+    margin: 1em;
+    background-color: #6eadf7;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-leer-mas:hover {
+    background-color: #5b9cd8;
+}
+
+
+.testimonios {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #f8f9fa;
+}
+
+.testimonios h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.carrusel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel-item {
+    display: none;
+    font-size: 1.1em;
+    color: #555;
+    padding: 1.5em;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carrusel-item.active {
+    display: block;
+}
+
+.carrusel-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.carrusel-item h3 {
+    font-size: 1em;
+    color: #333;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.carrusel-controles {
+    margin-top: 1em;
+}
+
+.carrusel-controles button {
+    background-color: #6eadf7;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carrusel-controles button:hover {
+    background-color: #5b9cd8;
+}
+
+/*Seccion Nosotros*/
+
+.about {
+    text-align: center;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 30px;
+}
+/* Misión, Visión, Valores */
+.mvv {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mvv .card {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mvv .card h2 {
+    color: #0078D4;
+    margin-bottom: 10px;
+}
+
+.mvv .card p {
+    font-size: 1rem;
+}
+
+/* Historia */
+.history {
+    padding: 40px;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.history h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.history p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Equipo */
+.team {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Sección de servicios */
+#servicios {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#servicios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.servicios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicio-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.servicio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.servicio-card h3 {
+    font-size: 1.5rem;
+    color: #0078D4;
+    margin-bottom: 10px;
+}
+
+.servicio-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilo general de los botones */
+.servicios-button {
+    display: inline-block; /* Asegura que se ajuste al contenido */
+    margin-top: 10px; /* Espacio superior */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    background-color: #0078D4;
+    color: white !important; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    text-decoration: none; /* Sin subrayado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* Efecto hover */
+.servicios-button :hover {
+    background-color: #005bb5; /* Azul más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Eleva el botón ligeramente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.servicios-button :active{
+    transform: translateY(0); /* Restaura la posición original */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Contenedor principal */
+.contacto-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.contacto{
+    text-align: center;
+    padding-top: 40px;
+}
+/* Contenedor principal */
+.contacto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Contenedor principal */
+.contacto-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Formulario */
+.formulario {
+    flex: 1 1 40%;
+    background-color: rgb(199, 204, 204);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.formulario h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0078D4;
+}
+
+.formulario .form-group {
+    margin-bottom: 15px;
+}
+
+.formulario .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario .form-group input,
+.formulario .form-group textarea {
+    width: 100%;
+    padding: 4px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario .btn-submit {
+    background-color: #0078D4;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario .btn-submit:hover {
+    background-color: #005bb5;
+}
+
+/* Información de contacto */
+.contact-info {
+    flex: 1 1 35%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0078D4;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.contact-info .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    gap: 10px;
+}
+
+.contact-info .social-media li {
+    display: inline;
+}
+
+.contact-info .social-media li a {
+    text-decoration: none;
+    color: #0078D4;
+    transition: color 0.3s ease;
+}
+
+.contact-info .social-media li a:hover {
+    color: #005bb5;
+}
+
+/*Servicio 1*/
+/* Beneficios */
+.benefits {
+    padding: 40px;
+    background-color: white;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+/* Proceso */
+.process {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.process .steps {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.process .step {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonios */
+.testimonials {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial {
+    max-width: 300px;
+    font-style: italic;
+}
+
+/* CTA */
+.cta {
+    background-color: #d4dade;
+    color: black;
+    text-align: center;
+    padding: 40px;
+    size: 100%;
+}
+
+.cta .btn-cta {
+    background-color:#0078D4;
+    color: white;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.intro {
+    text-align: center;
+}
+
+/*boton whatsapp*/
+.whatsapp-float {
+    position: fixed; /* Mantiene el botón en su lugar */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.whatsapp-float img {
+    width: 60px; /* Tamaño del ícono */
+    height: 60px;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega un poco de sombra */
+    transition: transform 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1); /* Amplía ligeramente el botón al pasar el cursor */
+}
