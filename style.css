@@ -692,3 +692,81 @@ body {
     font-size: 12px;
   }
 }
+/* Estilos básicos */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menú para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta el menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #007bff;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+
+    .menu-toggle {
+        display: block; /* Botón de hamburguesa visible solo en móvil */
+    }
+
+    .menu.active {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+}
+
