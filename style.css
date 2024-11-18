@@ -652,3 +652,43 @@ body {
 .whatsapp-float img:hover {
     transform: scale(1.1); /* Amplía ligeramente el botón al pasar el cursor */
 }
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1 1 calc(33.333% - 20px); /* Tres columnas con espacio entre ellas */
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    flex: 1 1 100%; /* Una columna en pantallas pequeñas */
+  }
+}
+/* Para pantallas grandes (más de 768px) */
+body {
+  font-size: 16px;
+}
+
+/* Para pantallas medianas (menos de 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Para pantallas pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
