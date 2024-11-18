@@ -30,6 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("prev").addEventListener("click", function() {
             cambiarSlide(-1);
         });
+        function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
         
         document.getElementById("next").addEventListener("click", function() {
             cambiarSlide(1);
